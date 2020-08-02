@@ -12,15 +12,11 @@ extern double p_stdnorm(double z);
 
 int main(void)
 {
-    double val,a,b,c,d,e,f,g,h,YUDO_A=1,YUDO_B=1;
+    double val,a,b,g,h,YUDO_A=1,YUDO_B=1;
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
 
-    c=MU_A;
-    d=sigma_A;
-    e=MU_B;
-    f=sigma_B;
 
     printf("input the filename of sample:");
     fgets(fname,sizeof(fname),stdin);
@@ -36,8 +32,8 @@ int main(void)
     while(fgets(buf,sizeof(buf),fp) != NULL){
         sscanf(buf,"%lf",&val);
 
-        a=(val-c)/d;
-        b=(val-e)/f;
+        a=(val-MU_A)/sigma_A;
+        b=(val-MU_B)/sigma_B;
         g=p_stdnorm(a);
         h=p_stdnorm(b);
         YUDO_A=YUDO_A*g;

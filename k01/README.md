@@ -1,6 +1,6 @@
 # 課題1 レポート
 
-aa83988848 薗田光太郎
+bb35319027 田平亮介
 
 ## 課題
 
@@ -43,17 +43,25 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
-あいうえお
+34. 標本分散を求める
+
+35. 標本平均を求める
+
+44. 不変分散を求める
+
+52. 平均を求める関数
+
+56. 分散を求める関数
 
 ## 入出力結果
 
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
+sample mean：173.888750
+sample variance：25.361711
+population mean (estimated)：173.888750
+population variance (estimated)：28.984813
 ```
 
 ## 修正履歴

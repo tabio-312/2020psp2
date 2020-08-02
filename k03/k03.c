@@ -23,9 +23,9 @@ int main(int argc, char* argv[])
 
 
 
-
+if(argc==4){
     printf("============================================\n");
-    sscanf(argv[1],"%1f",&mu);
+    sscanf(argv[1],"%lf",&mu);
     printf("template mean: %4.1lf\n",mu);
     sscanf(argv[2],"%lf",&sigma);
     printf("template standard deviation: %3.2lf\n",sigma);
@@ -39,13 +39,16 @@ int main(int argc, char* argv[])
         dummy = r_stdnorm()*sigma+mu;
         printf("%5.2lf\n",dummy);
     }
-
-    return EXIT_SUCCESS;
+}else{
+    printf("input error\n");
+    exit(EXIT_FAILURE);
+}
+    return 0;
 }
 
 double r_unif(void)
 {
-    return (double)(rand()+1)/(RAND_MAX+2);
+    return (double)(rand()+1)/((double)RAND_MAX+2);
 }
 
 double r_stdnorm(void)

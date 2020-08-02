@@ -55,7 +55,7 @@ int main(void)
 
         if(gender==1){
             a++;
-        }elseif(gender==2){
+        }else if(gender==2){
             e++;
         }else{
             f++;

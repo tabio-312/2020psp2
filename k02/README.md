@@ -1,6 +1,6 @@
 # 課題2 レポート
 
-aa83988848 薗田光太郎
+bb35319027 田平亮介
 
 ## 課題
 
@@ -20,13 +20,22 @@ aa83988848 薗田光太郎
 と計算できる．<img src="/k02/tex/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.270567249999992pt height=14.15524440000002pt/>は仮定した確率密度関数で，<img src="/k02/tex/27e556cf3caa0673ac49a8f0de3c73ca.svg?invert_in_darkmode&sanitize=true" align=middle width=8.17352744999999pt height=22.831056599999986pt/>はその母数．<img src="/k02/tex/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.270567249999992pt height=14.15524440000002pt/>が正規分布なら，<img src="/k02/tex/27e556cf3caa0673ac49a8f0de3c73ca.svg?invert_in_darkmode&sanitize=true" align=middle width=8.17352744999999pt height=22.831056599999986pt/>は，平均<img src="/k02/tex/07617f9d8fe48b4a7b3f523d6730eef0.svg?invert_in_darkmode&sanitize=true" align=middle width=9.90492359999999pt height=14.15524440000002pt/>と分散<img src="/k02/tex/e6718aa5499c31af3ff15c3c594a7854.svg?invert_in_darkmode&sanitize=true" align=middle width=16.535428799999988pt height=26.76175259999998pt/>である．
 
 ## ソースコードの説明
+8~11. A県とB県の平均と標準偏差を定義する
+
+35 A県の平均と分散で標準化する
+
+36 B県の平均と分散で標準化する
+
+37 A県の出現確率を求める
+
+38 B県の出現確率を求める
 
 ## 入出力結果
 
-```
-Likelihood for A：
-Likelihood for B：
-```
+input the filename of sample:../sample/heights_male.csv
+the filename of sample:../sample/heights_male.csv
+L_A:0.000006
+L_B:0.000002
 
 ## 修正履歴
 

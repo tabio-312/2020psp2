@@ -66,4 +66,5 @@ population variance (estimated)：28.984813
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
+[comment #20200804 sonoda]
+- OKです．課題1の完了を確認しました
